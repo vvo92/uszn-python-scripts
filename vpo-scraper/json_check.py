@@ -9,7 +9,7 @@ def main():
             try:
                 json_d = json.load(json_f)
             except:
-                print(json_f.name)
+                print(f'Некорректный json: {json_f.name}')
                 errJsonList.append(json_f.name)
     if len(errJsonList) != 0:
         for jsonf in errJsonList:
